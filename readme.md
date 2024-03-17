@@ -37,9 +37,10 @@ $ node index "mongodb://localhost:27017"
 ## Database Setup
 
 Due to mongo having no actual relational data, we have to rely on the names of fields to get the correlation.
-Thus a foriegn reference in Mongo should be of the form "_<collection_name>Id" or "<collection_name>Id" as a field in a document.
+Thus a foreign reference in Mongo should be of the form "_<collection_name>Id" or "<collection_name>Id" as a field in a document.
 For example, if we have a collection named "templates" and a document links to its id 
 then we expect the document to contain a field called "_templateId" or "templateId".
+
 
 ## Future
 
@@ -50,4 +51,3 @@ In addition, we will look to support a way to put in custom mapping so your data
  
 If you wish to contribute to this tool, <a href="https://discord.novu.co">Come Join Our Discord</a> 
 and discuss with the team what you would like to do. 
-
